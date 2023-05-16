@@ -1,0 +1,563 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    
+}
+
+
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+
+::-webkit-scrollbar-track {
+    background: #00000000;
+}
+
+
+::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.250);
+    border-radius: 10px;
+}
+
+/* indicador hover */
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(208, 173, 219, 0.574);
+}
+
+
+
+
+body {
+    background-image: url(https://i.gifer.com/WSG.gif);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+
+
+}
+
+
+
+.contenedorPadre {
+    display: flex;
+    justify-content: center;
+    margin-top: 5vh;
+
+
+}
+
+
+.contenedorCentral {
+    display: flex;
+    flex-flow: row nowrap;
+    width: 1000px;
+    margin: 0 10px 20px 10px;
+   
+
+    /* background-color: rgba(85, 227, 8, 0.878);/**/
+}
+
+
+.contenedorIzquierdo {
+    flex: 10 1 auto;
+
+ 
+    background-color: rgba(0, 0, 0, 0.215);
+    border-radius: 10px;
+
+    display: flex;
+    flex-flow: column nowrap;
+   
+    margin-right: 20px;
+    /**/
+}
+
+.logo img {
+    border-radius: 3px;
+  }
+  
+  .logo span {
+    display: inline-block;
+    animation: neon-border 1.5s infinite;
+    animation-delay: calc(0.1s * var(--item));
+    animation-duration: 5s;
+    padding: 0px;
+    border: 5px solid transparent;
+    border-radius: 5px;
+  }
+  
+  @keyframes neon-border {
+    0% {
+      transform: scale(1);
+      border-color: #FFFFFF;
+      box-shadow: none;
+    }
+    50% {
+      transform: scale(1.1);
+      border-color: #ff00ff;
+      box-shadow: 0 0 15px #ff00ff;
+    }
+    100% {
+      transform: scale(1);
+      border-color: #f717bf;
+      box-shadow: none;
+    }
+  }
+  
+  
+
+.entradaTexto {
+ 
+    height: 65%;
+
+    padding-left: 10%;
+    /**/
+
+    display: flex;
+    flex-flow: column nowrap;
+ 
+    justify-content: center;
+    align-items: center;
+
+}
+
+.textAreaIzq {
+    width: 90%;
+    height: 80%;
+    font-size: 1.9rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border-style: none;
+    resize: none;
+    /**/
+    outline: none;
+    background-color: transparent;
+    color: rgba(255, 255, 255, 0.741);
+
+}
+
+.textAreaIzq::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+    /**/
+}
+
+.advertencias {
+    height: 5%;
+
+}
+
+.advertencia {
+    padding-left: 14%;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; 
+    color: magenta;
+
+}
+
+.contenedorBotonesIzquierdo {
+    height: 15%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.boton {
+    width: 35%;
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    /**/
+    letter-spacing: 2px;
+    padding: 6px;
+    height: 35px;
+    color: rgba(224, 60, 197, 0.696);
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+
+.boton:hover {
+    transform: scale(1.04);
+    /**/
+    box-shadow: 1px 1px 8px #00000069;
+    transition: 0.5s transform;
+}
+
+.boton:active {
+    background: #dadada43;
+}
+
+.encriptar {
+    background-color: #f032e6;
+    color: rgb(233, 56, 174);
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 0px;
+    border-radius: 80px;
+    border: none;
+    text-shadow: 0px 0px 10px #f032e6;
+    box-shadow: 0px 0px 10px #f032e6,
+                0px 0px 20px #f032e6,
+                0px 0px 30px #f032e6,
+                0px 0px 40px #f032e6;
+    transition: all 0.3s ease-in-out;
+  
+  
+
+    background-color: #8310e8;
+    text-shadow: 0px 0px 10px #492568;
+    box-shadow: 0px 0px 10px #8310e8,
+                0px 0px 20px #8310e8,
+                0px 0px 30px #8310e8,
+                0px 0px 40px #8310e8;
+  
+  
+
+    background-color: #63007c;
+    text-shadow: 0px 0px 10px #6a1c36;
+    box-shadow: 0px 0px 10px #f325a4,
+                0px 0px 20px #1c246a,
+                0px 0px 30px #1c246a,
+                0px 0px 40px #1c246a;;
+    margin-right: 20px;
+}
+
+.desencriptar {
+
+        background-color: #f032e6;
+        color: rgb(233, 56, 174);
+        font-size: 1.2em;
+        font-weight: bold;
+        padding:  0px;
+        border-radius: 25px;
+        border: none;
+        text-shadow: 0px 0px 10px #f032e6;
+        box-shadow: 0px 0px 10px #f032e6,
+                    0px 0px 20px #f032e6,
+                    0px 0px 30px #f032e6,
+                    0px 0px 40px #f032e6;
+        transition: all 0.3s ease-in-out;
+      
+      
+    
+        background-color: #8310e8;
+        text-shadow: 0px 0px 10px #492568;
+        box-shadow: 0px 0px 10px #8310e8,
+                    0px 0px 20px #8310e8,
+                    0px 0px 30px #8310e8,
+                    0px 0px 40px #8310e8;
+      
+      
+
+        background-color: #63007c;
+        text-shadow: 0px 0px 10px #6a1c36;
+        box-shadow: 0px 0px 10px #f325a4,
+                    0px 0px 20px #1c246a,
+                    0px 0px 30px #1c246a,
+                    0px 0px 40px #1c246a;
+      }
+
+
+
+
+.contenedorDerecho {
+    flex: 1 1 auto;
+
+    /* background-color: blue;/**/
+    background-color: rgba(0, 0, 0, 0.215);
+    border-radius: 10px;
+
+    display: flex;
+    flex-flow: column nowrap;
+    /*ESte flex-flow abarca tanto "flex-drirection" como "flex-wrap" es como una fusion de los dos, por eso se uso este, pero puedo usar los otros dos en vez de este sin problema*/
+}
+
+
+.salidaDetexto {
+   
+    height: 85%;
+
+    display: flex;
+    flex-flow: column nowrap;
+    /*ESte flex-flow abarca tanto "flex-drirection" como "flex-wrap" es como una fusion de los dos, por eso se uso este, pero puedo usar los otros dos en vez de este sin problema*/
+    justify-content: center;
+    align-items: center;
+
+    display: none;
+   
+}
+
+.textAreaDer {
+
+    width: 90%;
+    height: 90%;
+
+    padding: 10px 10px 10px 10px;
+
+
+    border-style: none;
+    resize: none;
+    outline: none;
+    text-align: center;
+    /*font-size: 1.6rem;/**/
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    background-color: transparent;
+    color: rgba(255, 255, 255, 0.741);
+
+}
+
+.contenedorBotonesDerecho {
+    /* background-color: gold;/**/
+    height: 15%;
+
+    display: flex;
+    /**/
+    flex-flow: row nowrap;
+   
+    justify-content: center;
+    align-items: center;
+    /**/
+    display: none;
+    /**/
+}
+
+.copiar {
+    width: 80%;
+    background-image: linear-gradient(to bottom right, #161116, #FF1493); /* Colores rosa y violeta */
+    border: 2px solid black; /* Color del borde */
+    border-radius: 10px; /* Radio de las esquinas */
+     box-shadow: 0 0 5px 5px #662af0; /* Sombra del borde estilo neon */
+     
+}
+
+
+
+
+.sinMensaje {
+    width: 100%;
+    height: 100%;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    /**/
+    align-items: center;
+    /**/
+    text-align: center;
+ 
+}
+
+.dibujo {
+    width: 255px;
+    /**/
+    opacity: 0.5;
+}
+
+
+.textoSinMensaje1 {
+    margin-top: 40px;
+    color: rgba(255, 255, 255, 0.74);
+    font-size: 1.5rem;
+    /* display: none;/**/
+    text-shadow: 2px 2px #FF69B4; /* agregar sombra de texto */
+background-clip: text; /* hacer que el fondo sea transparente en el texto */
+
+color: transparent; /* hacer que el color del texto sea transparente */
+background-image: linear-gradient(45deg, #96158b, #ab80f0); /* agregar un gradiente de fondo */
+border-radius: 10px;
+
+    box-shadow: 0 0 5px #FF69B4, 0 0 10px #FF69B4, 0 0 15px #FF69B4, 0 0 20px #FF69B4, 0 0 30px #FF69B4, 0 0 40px #FF69B4, 0 0 50px #FF69B4;
+    animation: neon 1s infinite alternate;
+  }
+  
+
+
+.textoSinMensaje2 {
+    margin-top: 15px;
+    color: rgba(255, 255, 255, 0.708);
+    font-size: 10px;
+    /*display: none;/**/
+}
+
+.swal2-title {
+    position: relative;
+    max-width: 100%;
+    margin: 0;
+    padding: .8em 1em 0;
+    color: inherit;
+    font-size: 1.875em;
+    font-weight: 600;
+    text-align: center;
+    text-transform: none;
+    word-wrap: break-word;
+}
+
+my-audio {
+    font-size: 1rem;
+    background-color: #f32cfa;
+    /* Color fucsia */
+    color: rgb(191, 65, 223);
+    /* Color de texto blanco */
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 70px;
+    /* Botón redondeado */
+    box-shadow: 0px 0px 10px 0px #242323;
+    /* Sombra neón */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    /* Transición suave de color de fondo */
+    justify-content: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+
+
+
+
+
+
+footer {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5vh;
+}
+
+.footerMain {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.215);
+    border-radius: 15px;
+    padding: 10px 50px;
+    /**/
+    width: 1000px;
+    margin: 0px 10px;
+}
+
+.designed {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+color: rgba(245, 127, 192, 0.782);
+font-style: italic;
+text-align: center;
+text-shadow: 00 0 40px violet, 0 0 50px violet, 0 0 60px violet;
+}
+
+.nameDesigned {
+    color: rgb(255, 255, 255);
+    font-style: italic;
+    font-family: 'Anton', sans-serif;
+    letter-spacing: 0.01PX;
+}
+
+
+
+.redes {
+    margin-top: 15px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.redes a {
+   color: white;
+  padding: 0 5px;
+  font-size: 25px;
+  text-decoration: none;
+  text-shadow: 0 0 10px #ff0080, 0 0 20px #ff0080, 0 0 30px #ff0080, 0 0 40px #ff0080, 0 0 50px #ff0080, 0 0 60px #ff0080, 0 0 70px #ff0080;
+}
+
+
+.logochallenges {
+    position: relative;
+    bottom: 20px;
+    right: 20px;
+    animation: moverLogo 5s ease-in-out infinite alternate;
+    filter: drop-shadow(0px 0px 10px #fff) drop-shadow(0px 0px 20px #fff);
+  }
+  
+  @keyframes moverLogo {
+    0% {
+      transform: translateX(0);
+      filter: drop-shadow(0px 0px 10px #f54291) drop-shadow(0px 0px 20px #f54291);
+    }
+    50% {
+      transform: translateX(50px);
+      filter: drop-shadow(0px 0px 10px #fff) drop-shadow(0px 0px 20px #fff);
+    }
+    100% {
+      transform: translateX(0);
+      filter: drop-shadow(0px 0px 10px #50d4f2) drop-shadow(0px 0px 20px #50d4f2);
+    }
+  }
+  
+  
+  @keyframes moverLogo {
+    0% {
+      transform: translateX(0); 
+    }
+    100% {
+      transform: translateX(50px); 
+    }
+  }
+ 
+  @keyframes moverLogo {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(50px);
+    }
+  }
+  
+ 
+   
+ 
+
+
+
+
+/*Media query*/
+
+@media all and (max-width:750px) {
+
+    .contenedorCentral {
+        flex-flow: column nowrap;
+    }
+
+    .contenedorIzquierdo {
+        margin: 0 0 20px 0;
+    }
+
+    .contenedorDerecho {
+        padding-bottom: 25px;
+    }
+
+    .dibujo {
+        display: none;
+    }
+}
+
+@media all and (max-width:450px) {
+
+    .contenedorBotonesIzquierdo {
+        flex-flow: column nowrap;
+        margin: 10px 0px 25px 0px;
+    }
+
+    .boton {
+        width: 80%;
+    }
+
+    .encriptar {
+        margin: 0px 0px 15px 0px;
+    }
+
+    .entradaTexto {
+        padding-left: 0;
+    }
+}
